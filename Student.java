@@ -5,8 +5,9 @@ public class Student extends Human {
     super(name, age);
     this.score = score;
   }
-
-  public String getStudentProfile() {
+  
+  @Override
+  public String getProfile() {
     String profile = "年齢は" + super.age + "です。";
     profile += "学生で、テストの点は" + this.score + "です。";
     return profile;
